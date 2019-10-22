@@ -1,4 +1,4 @@
-# x-solla-front
+# xsolla-front
 
 ## Project setup
 ```

@@ -1,18 +1,78 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="feedbackPost">
+    <hr>
+    <h2>Stack:</h2>
+    <ul>
+      <li>Symfony 4 + Doctrine</li>
+      <li>Vue CLI + Router + VueX + Semantic UI</li>
+    </ul>
+    <h2>URLs:</h2>
+    <ul>
+      <li><a href="http://xsolla-front.it-pokemon.ru" target="_blank">xsolla-front.it-pokemon.ru</a></li>
+      <li><a href="http://xsolla-back.it-pokemon.ru" target="_blank">xsolla-back.it-pokemon.ru</a></li>
+    </ul>
+    <h2>GitHub:</h2>
+    <ul>
+      <li><a href="https://github.com/it-pokemon/xsolla-front" target="_blank">https://github.com/it-pokemon/xsolla-front</a></li>
+      <li><a href="https://github.com/it-pokemon/xsolla-back" target="_blank">https://github.com/it-pokemon/xsolla-back</a></li>
+    </ul>
+    <hr>
+    <h2>Главный feedback от тестового задания:</h2>
+    <p>За неделю выполнения тестового задания, узнал больше чем за последние полгода на прошлом месте работы, и за год в целом.</p>
+    <hr>
+    <h3>Были инсайды по Symfony + Doctrine</h3>
+    <ul>
+      <li>Composer это круто.</li>
+      <li>Модели и аннотации это круто.</li>
+      <li>MVC это круто.</li>
+      <li>Миграции это круто.</li>
+      <li>Интерфейсы это круто. Полиморфизм все дела.</li>
+      <li>Репозитории и сервисы это круто.</li>
+      <li>Обработкой ответа от запроса можно управлять отданным кодом с сервера. 200 - ОК, не 200 есть разные проблемы.</li>
+    </ul>
+    <h3>Были непонятки, хотел бы разобраться</h3>
+    <ul>
+      <li>Как канонично, должен быть устроен проект (по папкам, сущностям или отдельным блокам).</li>
+      <li>На каком уровне абстракций выкидывать Exception'ы. В контролерах, сервисах или репозиториях.</li>
+      <li>Отсутсвтие опыта работы с MVC + появление хоть какой-то типизации дает о себе знать. Некоторое время мучился с float/decimal/string.</li>
+      <li>Некоторое время не мог победить cross-origin запросы к api.</li>
+    </ul>
+    <h4>Общее</h4>
+    <p>Первый раз разворачивал и работал с Symfony и вообще MVC-паттерном. Понравилось, что можно быстро, без лишних телодвижений и кода разрабатывать системы используя ООП. Понравилось что Doctrine делает рутинную работу по созданию таблицы модели.</p>
+    <hr>
+    <h3>Инсайды по Vue CLI + Router + VueX</h3>
+    <ul>
+      <li>VUEX State Management это круто.</li>
+      <li>Научлися общаться между компоненетами через emit'ы.</li>
+      <li>Продвинулся в понимании Promise. Раньше не работал с ними. А тут пришлось.</li>
+      <li>Продвинулся в понимании computed (почему то мне сложно это с первого раза осознать).</li>
+    </ul>
+    <h3>Были непонятки, хотел бы разобраться</h3>
+    <ul>
+      <li>Типизация. Из-за не использования flow и typescript нужно было думать о том, что на сервер уходят строки, а не инты с флоатами.</li>
+      <li>Как канонично, должен быть устроен проект (по папкам, сущностям, отдельным блокам, модулям и т.д).</li>
+      <li>Как канонично, должны быть написаны компоненты (делить их, делать много абстракций, распологать mounted перед methods или наоборот)</li>
+      <li>Мучился с cross-origin запросами и preflight OPTION (перфикционисту внутри казалось, что это лишний запрос увеличивающий нагрузку на сервер). Долго пытался его победить.</li>
+      <li>State Management между окнами бразуера/разными комьпютерами. Долго эксперементировать с этим не стал. Понял, что нужно идти в сторну subscribe mutation.</li>
+      <li>Какие бест-практики в работе с state-management'ом, что можно хранить в стейте, а что лучше хранить локально в модулях.</li>
+      <li>Async/Await функции (не дошел еще до этого еще в кусрах по JS).</li>
+      <li>Тяжлеловато далась валидация, а имено работа с обработкой ответов о конкретных ошибок по полям от сервера.</li>
+    </ul>
+    <h4>Общее</h4>
+    <p>Первый раз работал с Vue не в CDN режиме, а в проектном режиме. Не понаравился Semantic UI. Не стал использвоать свои навыки верстки на jade/less. Решил сосредоточится на использовании основных инстурментов.</p>
+    <hr>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
+  name: 'home'
 }
 </script>
+
+<style scoped>
+  .feedbackPost{
+    font-size: 18px;
+  }
+</style>
